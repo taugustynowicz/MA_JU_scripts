@@ -1,11 +1,11 @@
 clc, clear, close all
 
 % Load the first .mat file
-load('D:\marek\chirps_ftrip\workspace_hapt_2025_erp\mats\chirp_hap12_stderp_std\chirp_hap12_stderp_std_p172_01a_preprocessed.mat'); % Assumes the variable is named 'preprocessed'
+load('example_path');
 preprocessed1 = preprocessed;
 
 % Load the second .mat file
-load('D:\marek\chirps_ftrip\workspace_hapt_2025_erp\mats\chirp_hap12_stderp_std\chirp_hap12_stderp_std_p172_01b_preprocessed.mat'); % Assumes the variable is named 'preprocessed'
+load('example_path');
 preprocessed2 = preprocessed;
 
 % Verify compatibility of headers and labels
@@ -40,7 +40,7 @@ merged_data.cfg = preprocessed1.cfg; % You may need to customize this if cfgs di
 merged_data.cfg.previous = {preprocessed1.cfg, preprocessed2.cfg}; % Store both cfgs for reference
 
 % Save the merged data
-save('chhap12_p172_01_zol26_merged_SG_linear_ERP.mat', 'merged_data');
+save('chhap12_pXYZ.mat', 'merged_data');
 
 % Optional: Clear temporary variables
 clear preprocessed1 preprocessed2 sampleinfo2_adjusted;
