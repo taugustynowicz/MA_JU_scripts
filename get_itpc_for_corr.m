@@ -3,7 +3,7 @@ clc, clear, close all
 
 %% Define paths and load data
 % Define the directory path
-folderPath = 'D:\marek\chirps_ftrip\workspace_hapt_2025_tfr\mats\patients_clust1';
+folderPath = 'example_path';
 
 % Add the folder to MATLAB's search path
 addpath(folderPath);
