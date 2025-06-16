@@ -4,7 +4,7 @@ clc, clear, close all
 %% Define paths and load data
 
 % Initialize FieldTrip
-addpath('d:\marek\github-repositories\fieldtrip\');
+addpath('example_path');
 ft_defaults;
 
 % Define paths and file lists
